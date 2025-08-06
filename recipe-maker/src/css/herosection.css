@@ -1,0 +1,14 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  filter: blur(3px); /* Adjust blur level */
+  transform: scale(1.05); /* Slight zoom to hide edges after blur */
+}
