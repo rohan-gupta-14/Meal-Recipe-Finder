@@ -1,14 +1,37 @@
 .hero-container {
   position: relative;
   width: 100%;
+  height: 300px;
   overflow: hidden;
 }
 
 .hero-image {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%;
   object-fit: cover;
-  filter: blur(3px); /* Adjust blur level */
-  transform: scale(1.05); /* Slight zoom to hide edges after blur */
+  filter: blur(4px);
+  transform: scale(1.05); /* Prevents white edges */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.hero-btn {
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: darkorange;
 }
