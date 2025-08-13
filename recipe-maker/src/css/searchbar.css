@@ -75,3 +75,35 @@
 .navbar-search button:hover {
   background-color: #f0f0f0;
 }
+.recipe-results {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.recipe-card {
+    display: flex;
+    align-items: flex-start;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.recipe-img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+}
+
+.recipe-info {
+    flex: 1;
+    padding: 1rem;
+}
+
+.recipe-text {
+    max-height: none; /* allow full text */
+    overflow-y: auto;
+    line-height: 1.5;
+}
